@@ -1,11 +1,12 @@
 /*------------------------------------------------------------------------------
+                        10s Version Updated by pbrazleae 
                 Now uses: 00, 10, 20, 30, 40, 50, 60, 70, 80, 90
 
                Obsidian Colored Sidebar Items by CyanVoxel v2.0.0               
 
                    A colored sidebar CSS snippet inspired by
                    the "Coloured Folders" snippet by Lithou.
-                      "10s Version" Updated by pbrazleae
+                   10's version updated by pbrazeale
 
 This snippet targets folders beginning with numbered prefixes, and applies full
 color formatting based on the root colors listed below. The prefixes are both
@@ -40,6 +41,7 @@ INCON LIST: https://fontawesome.com/v4/icons/
   /* Default Prefix: None */
   --light-blue: #54b6f8;
   /* Default Prefix: 20 */
+  --pine: #006028;
   --blue: #437cf3;
   /* Default Prefix: 30 */
   --blue-violet: #6f51f4;
@@ -218,45 +220,45 @@ these to suit your own folder structure and vault theme!
 
 /* ------------------------------- 20 Prefix -------------------------------- */
 .nav-folder-title[data-path^="20"] {
-  color: var(--light-blue);
+  color: var(--pine);
   --nav-item-color-hover: color-mix(in srgb,
-      var(--light-blue) var(--fg-contrast-amount),
+      var(--pine) var(--fg-contrast-amount),
       var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb,
-      var(--light-blue) var(--bg-contrast-amount),
+      var(--pine) var(--bg-contrast-amount),
       transparent);
   --background-modifier-border-focus: color-mix(in srgb,
-      var(--light-blue) 40%,
+      var(--pine) 40%,
       transparent);
   --nav-collapse-icon-color: color-mix(in srgb,
-      var(--light-blue) 60%,
+      var(--pine) 60%,
       transparent);
 }
 
 .nav-folder-title[data-path^="20"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb,
-      var(--light-blue) 60%,
+      var(--pine) 60%,
       var(--contrast-color));
 }
 
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="20"]) {
   --nav-indentation-guide-color: color-mix(in srgb,
-      var(--light-blue) var(--medium-contrast-amount),
+      var(--pine) var(--medium-contrast-amount),
       transparent);
 }
 
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="20"]) .nav-file-title {
   color: color-mix(in srgb,
-      var(--light-blue) var(--medium-contrast-amount),
+      var(--pine) var(--medium-contrast-amount),
       var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb,
-      color-mix(in srgb, var(--light-blue) 50%, var(--highlight)) var(--bg-contrast-amount),
+      color-mix(in srgb, var(--pine) 50%, var(--highlight)) var(--bg-contrast-amount),
       transparent);
   --background-modifier-border-focus: color-mix(in srgb,
-      var(--light-blue) 40%,
+      var(--pine) 40%,
       transparent);
   --nav-item-background-active: color-mix(in srgb,
-      var(--light-blue) var(--active-contrast-amount),
+      var(--pine) var(--active-contrast-amount),
       transparent);
 }
 
