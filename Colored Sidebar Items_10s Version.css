@@ -6,7 +6,6 @@
 
                    A colored sidebar CSS snippet inspired by
                    the "Coloured Folders" snippet by Lithou.
-                   10's version updated by pbrazeale
 
 This snippet targets folders beginning with numbered prefixes, and applies full
 color formatting based on the root colors listed below. The prefixes are both
@@ -43,6 +42,7 @@ INCON LIST: https://fontawesome.com/v4/icons/
   /* Default Prefix: 20 */
   --pine: #006028;
   --blue: #437cf3;
+  --royal-blue: #4169E1;
   /* Default Prefix: 30 */
   --blue-violet: #6f51f4;
   /* Default Prefix: None */
@@ -342,44 +342,51 @@ these to suit your own folder structure and vault theme!
 
 /* ------------------------------- 40 Prefix -------------------------------- */
 .nav-folder-title[data-path^="40"] {
-  color: var(--violet);
+  color: var(--royal-blue);
   --nav-item-color-hover: color-mix(in srgb,
-      var(--violet) var(--fg-contrast-amount),
+      var(--royal-blue) var(--fg-contrast-amount),
       var(--contrast-color));
   --nav-item-background-hover: color-mix(in srgb,
-      var(--violet) var(--bg-contrast-amount),
+      var(--royal-blue) var(--bg-contrast-amount),
       transparent);
   --background-modifier-border-focus: color-mix(in srgb,
-      var(--violet) 40%,
+      var(--royal-blue) 40%,
       transparent);
-  --nav-collapse-icon-color: color-mix(in srgb, var(--violet) 60%, transparent);
+  --nav-collapse-icon-color: color-mix(in srgb, var(--royal-blue) 60%, transparent);
 }
 
 .nav-folder-title[data-path^="40"]:hover {
   --nav-collapse-icon-color: color-mix(in srgb,
-      var(--violet) 60%,
+      var(--royal-blue) 60%,
       var(--contrast-color));
 }
 
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="40"]) {
   --nav-indentation-guide-color: color-mix(in srgb,
-      var(--violet) var(--medium-contrast-amount),
+      var(--royal-blue) var(--medium-contrast-amount),
       transparent);
 }
 
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="40"]) .nav-file-title {
   color: color-mix(in srgb,
-      var(--violet) var(--medium-contrast-amount),
+      var(--royal-blue) var(--medium-contrast-amount),
       var(--default-text-color));
   --nav-item-background-hover: color-mix(in srgb,
-      color-mix(in srgb, var(--violet) 50%, var(--highlight)) var(--bg-contrast-amount),
+      color-mix(in srgb, var(--royal-blue) 50%, var(--highlight)) var(--bg-contrast-amount),
       transparent);
   --background-modifier-border-focus: color-mix(in srgb,
-      var(--violet) 40%,
+      var(--royal-blue) 40%,
       transparent);
   --nav-item-background-active: color-mix(in srgb,
-      var(--violet) var(--active-contrast-amount),
+      var(--royal-blue) var(--active-contrast-amount),
       transparent);
+}
+
+.nav-folder-title[data-path*="40"] .nav-folder-title-content:after {
+  content: "\f070";
+  /* blocket eye  */
+  font-size: 1.8rem;
+  padding-left: 8px;
 }
 
 /* ------------------------------- 50 Prefix -------------------------------- */
